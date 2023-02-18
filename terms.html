@@ -1,0 +1,673 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>PnC Player Terms of Service</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="9c2aaef6-e0ae-4b19-86d4-42313b772d7a" class="page sans"><header><h1 class="page-title">PnC Player <strong>Terms of Service</strong></h1></header><div class="page-body"><p id="f8e30275-fc6a-4284-bf37-96a3383ec173" class="">
+</p><p id="931cbf0c-aa6f-4396-9e6b-344da7cacda7" class="">Last updated: Feb 16, 2023</p><p id="39de8fe5-e6fb-4fd2-bd67-ae64f6ada300" class="">These Terms of Service govern all use of all technology, all Contracts, and all Services (as defined below) that You (as defined below) access and/or receive from PnC Player and/or its Suppliers. By having access to, receiving, and/or using the Services, You agree, without limitation or qualification, to be bound by and to comply with these Terms of Service. PNCPLAYER RESERVES THE RIGHT, AT ITS SOLE DISCRETION, TO ALTER OR UPDATE THESE TERMS OF SERVICE AND/OR THE SERVICES AT ANY TIME WITH OR WITHOUT NOTICE INCLUDING, WITHOUT LIMITATION, FEATURES, SPECIFICATIONS, CAPABILITIES, FUNCTIONS, LICENSING TERMS, RELEASE DATES, GENERAL AVAILABILITY OR OTHER CHARACTERISTICS. BY CONTINUING TO USE THE SERVICES AFTER ANY SUCH CHANGES, YOU AGREE TO BE BOUND BY SUBSEQUENT CHANGES AND ACKNOWLEDGE THAT PNCPLAYER SHALL HAVE NO LIABILITY TO YOU AS A RESULT OF ANY SUCH CHANGES. YOU ACKNOWLEDGE AND AGREE THAT ANY AND ALL USES OF THE SERVICES ARE FURTHER SUBJECT TO PNCPLAYER’S PRIVACY POLICY LOCATED AT <a href="https://t.ly/AVQa">https://t.ly/AVQa</a> (“PRIVACY POLICY”), IT MAY BE UPDATED FROM TIME TO TIME BY PNCPLAYER WITH OR WITHOUT NOTICE.</p><h3 id="560f7be1-8dde-45e6-86d7-3b368f83c0b3" class=""><strong>Table of contents</strong></h3><ul id="915d7b99-6739-4b0b-8b13-f2f31c5080cb" class="bulleted-list"><li style="list-style-type:disc"><strong>1. Definitions</strong></li></ul><ul id="b49f5615-355f-49b1-8645-6c58e9d03519" class="bulleted-list"><li style="list-style-type:disc"><strong>2. Ability to Accept Terms of Use</strong></li></ul><ul id="4516eb69-0047-44c1-bf59-e8fc586dbf3c" class="bulleted-list"><li style="list-style-type:disc"><strong>3. Acceptance and Accuracy</strong></li></ul><ul id="8297d3fb-ca69-4361-8a25-9204dc41fd3a" class="bulleted-list"><li style="list-style-type:disc"><strong>4. Grant of Licenses</strong></li></ul><ul id="dc0ed743-cfbd-454a-b9c0-750dae52e5cd" class="bulleted-list"><li style="list-style-type:disc"><strong>5. Scope of Use</strong></li></ul><ul id="6ab55ddf-42c4-4aa0-9903-659a21d66c6f" class="bulleted-list"><li style="list-style-type:disc"><strong>6. Automatic Updates/Communication Features</strong></li></ul><ul id="32a03680-ee83-4436-9e36-f216fc2f0894" class="bulleted-list"><li style="list-style-type:disc"><strong>7. Ownership and Intellectual Property Rights</strong></li></ul><ul id="d72725d5-075c-4ae4-99da-79f5da977767" class="bulleted-list"><li style="list-style-type:disc"><strong>8. Notice and Procedure For Making Claims of Copyright or Intellectual Property Infringement</strong></li></ul><ul id="0163368b-5484-423c-b7fc-6a179eff9857" class="bulleted-list"><li style="list-style-type:disc"><strong>9. Warranty Disclaimer</strong></li></ul><ul id="3f77b893-9793-4074-8fc0-d09333c39cb9" class="bulleted-list"><li style="list-style-type:disc"><strong>10. Limitation of Liability</strong></li></ul><ul id="1f99e64e-d1e1-427f-ab72-1ce41820df5d" class="bulleted-list"><li style="list-style-type:disc"><strong>11. Indemnity</strong></li></ul><ul id="02aaff9a-1f15-4137-b64e-a37783fdec65" class="bulleted-list"><li style="list-style-type:disc"><strong>12. Assignment</strong></li></ul><ul id="0f2d7988-d7d7-4ee0-b88a-8a062c772762" class="bulleted-list"><li style="list-style-type:disc"><strong>13. Publicity and Marketing</strong></li></ul><ul id="2185f54c-df80-45c2-ba7d-76be3ee41578" class="bulleted-list"><li style="list-style-type:disc"><strong>14. Governing Law; Dispute Resolution.</strong></li></ul><ul id="741bc8c8-f847-4021-b9d1-1d5660c06be1" class="bulleted-list"><li style="list-style-type:disc"><strong>15. Entire Agreement</strong></li></ul><h2 id="302cd430-039a-40ac-913b-45e2ed8c123a" class=""><strong>1. Definitions</strong></h2><p id="0fe87ea7-1c97-4f99-9247-5c134a1b7a20" class="">The PNCplayer Service (referred to herein as the “Service”) and the PNCplayer Website (referred to herein as the “Website”) are owned by PNCplayer AB and, from time to time, its subsidiary and affiliate corporations, successors, and assigns (collectively referred to as “PNCplayer”).</p><p id="a22fe475-d2e1-4962-977c-1adb6ba8db82" class="">“You” or “Your” means the individual, corporation or other entity that (a) has entered into a Contract, (b) has received a Demo Account through PNCplayer or one of its Agents, and/or (c) otherwise rightfully accesses and/or uses the Services or any portion thereof. The term “You” also implies Users and other individuals authorized by You as consistent with these Terms of Service to the extent reasonably implied in the context used herein. Nothing herein permits You to use the Services without first obtaining the necessary rights and consents described herein and in any Contract.</p><p id="4d38802c-fc47-44c2-ae7b-e63901c7b33c" class="">Your use of the Service and/or Website is subject to the following terms and conditions (referred to herein as the “Terms of Use” or “Terms”), to the contract established between PNCplayer and you (“referred to herein as the “Contract”), and to the terms and conditions of PNCplayer’s Privacy Policy, which is published at <a href="https://t.ly/AVQa">https://t.ly/AVQa</a>, and which is incorporated herein by reference.</p><h2 id="d4149289-8748-4f75-9512-30c6fdeb1168" class=""><strong>2. Ability to Accept Terms of Use</strong></h2><p id="a26878e2-19ed-427c-a59b-cb5de324cc3f" class="">You affirm that you are either more than 3 years of age, an emancipated minor, or that You possess legal parental or guardian consent, and that You are fully able and competent to enter into the terms, conditions, obligations, affirmations, representations, and warranties set forth in these Terms of Use, and to abide by and comply with these Terms of Use. In any case, you affirm that you are over the age of 3, as the PNCplayer Website and Service are not intended for children under the age of 3. If you are under 3 years of age, then please do not use the PNCplayer Website or Service—there are lots of other great websites for you. Talk to your parents about what sites are appropriate for you.</p><h2 id="c2f62dbf-36a6-4c7b-bd2a-cfc4dd58cc2a" class=""><strong>3. Acceptance and Accuracy</strong></h2><p id="8b3a2268-9597-4450-b338-e17b765cf964" class="">By using the PNCplayer Service and/or the Website, you agree, without limitation or qualification, to be bound by, and to comply with, these Terms and conditions and any other posted guidelines or rules applicable any website where the PNCplayer Service is found. PNCplayer may make improvements and/or changes to the Website at any time. Although we attempt to periodically update information on the Website, the information, materials and services provided on or through the Website may occasionally be inaccurate, incomplete or out of date. PNCplayer does not have a duty to update information contained in the Website, and PNCplayer will not be liable for any failure to update such information.</p><p id="14bbc7d1-6f32-4e17-8c7c-03bbe0138068" class="">We make no representation as to the completeness, accuracy or currentness of any information on this website, and we undertake no obligation to update or revise the information contained on this website, whether as a result of new information, future events or circumstances or otherwise. It is your responsibility to verify any information contained in this website before relying upon it.</p><p id="e0c11eec-b92b-43e8-bc88-551cd7a3ff0c" class="">In addition, individual members of the PNCplayer team may from time to time post blogs under their own byline on the Website. The views expressed in such blog posts are the author’s and do not necessarily reflect the views of PNCplayer.</p><h2 id="594773db-4259-42a5-a3c2-b46a31179884" class=""><strong>4. Grant of Licenses</strong></h2><p id="22e4877c-f36f-4492-b756-c25ab93d535a" class="">(a) Right to Use the Services. Subject to the terms and conditions of the Contract(s), including without limitation these Terms of Service, the Privacy Policy, PNCplayer grants to You, during the Term specified in the Contract(s) or the limited time period specified for the Account issued to You, a non-exclusive, non-transferable, revocable, limited license, without right of sublicense, to access and use the Services.</p><p id="3c73e542-0240-439f-9559-b92b50fe7e0b" class="">(b) Content. You hereby grant PNCplayer a worldwide, royalty-free, non-exclusive, transferable (solely to PNCplayer’s Agents and Suppliers) license to perform such acts with respect to the Content solely as are reasonable in connection with provisioning the Services including, without limitation, the right to: (i) secure, transcode, encode, reproduce, host, cache, route, reformat, and analyze the Content and create algorithms and reports based on access to and use of the Content by Users and End Users; (ii) use, exhibit, broadcast, deliver, publish, publicly display, publicly perform, distribute, promote, copy, store, and/or reproduce (in any form) the Content on or through the Services; and (iii) utilize Content to test PNCplayer’s internal technologies and processes.</p><h2 id="779ed392-6777-4173-89c1-8ebd57ef5af1" class=""><strong>5. Scope of Use</strong></h2><p id="c6b907eb-bee4-4780-b68b-f49aab8ea781" class="">(a) Responsibility for Content. You are solely responsible for all matters arising out of or in connection with the Content including, without limitation, ensuring that the Content does not include Prohibited Content.</p><p id="2370fa30-9d1e-4905-8ceb-81782c154337" class="">(b) Content. You are responsible for all Content (regardless of whether provided by You and/or by third parties) including without limitation for any damages that may result from errors or omissions, false or defamatory material, and/or material that is offensive, indecent, objectionable, infringing, and/or illegal. Under no circumstances will PNCplayer, its Agents or its Suppliers be liable in any way for Content or for any loss or damage of any kind incurred by You or any third party as a result of the use or publication of any Content posted, delivered, streamed, or otherwise transmitted via in or connection with the Services. Without limiting the foregoing, You acknowledge that neither PNCplayer nor its Agents or Suppliers will be responsible for preventing or identifying infringement of intellectual property rights or other violations associations with the Content, and that PNCplayer, its Agents and its Suppliers assume no responsibility to edit, review, or oversee Content submitted, uploaded, distributed, retrieved, or viewed in connection with use of the Services, and shall not be responsible for screening or monitoring for possible (i) infringement or enforcing Your rights or third party rights with respect to Content, (ii) unlawful, inappropriate or unpermitted use, (iii) libel, falsehoods, errors or omissions contained in Content, or (iv) non compliance with FCC or other governmental laws and/or regulations. For any infringement or suspected infringement of intellectual property rights, You must immediately remove the applicable Content from the Services. Without limiting the foregoing, You acknowledge that PNCplayer respect Intellectual Property rights and has Copyright Notification Procedures available below with respect to third party claims of infringement.</p><p id="e69f69f7-25e7-412d-a5cf-89c73f591bef" class="">(c) Third Party Materials/Products/Services. Any third party products, content, services and/or links displayed on or through the Services are not referrals or endorsements of any product, service or provider; any and all such offerings are displayed solely for convenience only. The Services may in some cases be permitted for use with third party components or services (“Third Party Services”) that may be subject to their own, separate license agreements or special pass-through terms, and You assume all risks and liabilities associated with the use of any such third party offerings. For clarity, nothing in this Section diminishes PNCplayer’s obligations to You under these Terms of Service with respect to PNCplayer’s (or its Suppliers’) technology that is expressly stated as included within the “Services” in the Contract(s) (the “PNCplayer IP”), but instead relates to any access and/or use of third party products and/or services that You elect to utilize in connection with the PNCplayer IP (regardless of whether PNCplayer provides integration or other services at Your request in connection with enabling or utilizing third party products and/or services with the Services). In no event will PNCplayer be responsible or liable for any failure or inability to access Third Party Services, including without limitation that which is caused by changes to Third Party Services (or portions thereof) that affect the integration with or use of the PNCplayer IP or otherwise.</p><p id="1d7e1e30-f082-4e24-9bef-91350f21cf8e" class="">(d) You acknowledge and agree that the technical processing and transmission of the Services and/or Content may involve transmissions over various networks and changes by You may be required to conform and adapt to technical requirements of connecting networks or devices.</p><p id="4cbf6b35-b936-46fc-9cba-71aeaf108d6a" class="">(e) The Player. The Player and similar technologies contains software to track and capture End User activity to assist PNCplayer and You in optimizing the Services and Your use of and benefit derived from the Services. Your obligations related to disclosures to End Users on Your website(s), applications, or otherwise are indicated in the Privacy Policy.</p><p id="411522c2-5ba4-4de5-bc2b-93e77cac382b" class="">(f) Content Preservation and Disclosure. You expressly acknowledge and agree that PNCplayer may, but is not required to, preserve Content and may also disclose Content if required to do so by law or in the good faith belief that such preservation or disclosure is reasonable or necessary to: (i) comply with legal process; (ii) enforce a Contract, including without limitation these Terms of Service; (iii) respond to claims that any Content violates the rights of third parties; and/or (iv) protect the rights, property, or personal safety of PNCplayer, its Suppliers, users and/or the public.</p><p id="15346d81-2d00-48dd-a33a-de1486ec4829" class="">(g) Demonstration Accounts. At PNCplayer’s discretion, You may receive a Account that may include limited access to test certain features and functionality of the Services. PNCplayer is permitted to suspend or terminate the Account in its sole discretion at any time with or without notice. At the end of any demonstration period as determined by PNCplayer, You are responsible for paying applicable fees for use of the Services pursuant to the payment terms and prices designated in a separate agreement between You and PNCplayer (or one of its Agents) or, if no such agreement has been executed, then pursuant to the PNCplayer’s then-current standard pricing schedule.</p><h2 id="b9257fe4-a81e-4aaa-95bd-ab9b8205aaa6" class=""><strong>6. Automatic Updates/Communication Features</strong></h2><p id="e3a9cc09-09ba-4f94-b718-401266e97c32" class="">The Services consist of the most current versions thereof, including without limitation automatic general release updates to the Services such as bug fixes, patches, enhanced functions, and/or security related patches. You agree to accept and/or migrate (as applicable) to any and all new versions of Services, or any portion thereof, that PNCplayer may implement and/or otherwise provide to You, and PNCplayer shall have no obligation to provide or support any prior versions of the Services or portions thereof.</p><h2 id="00263745-c891-45da-8655-acc7df09858c" class=""><strong>7. Ownership and Intellectual Property Rights</strong></h2><p id="853f4159-28e0-4234-b140-05a417bedbe6" class="">As between You and PNCplayer, You and Your suppliers and licensors own all right, title and interest in and to Content (excluding any content that might be provided by PNCplayer and/or its Suppliers) including associated intellectual property rights under copyright, trademark and/or other applicable domestic and international laws. PNCplayer and its Suppliers own all right, title and interest in and to the Services (including any content that might be provided by PNCplayer and/or its Suppliers) including associated intellectual property rights under copyright, trade secret, patent, trademark and/or other applicable domestic and international laws. In no event shall the Services (or any portion thereof) or any content (including without limitation advertisements) that might be provided by PNCplayer and/or its Suppliers be deemed sold or assigned to You. Any and all rights not expressly granted by PNCplayer are reserved to PNCplayer and its Suppliers. PNCplayer is not required to accept unsolicited feedback. If You provide feedback about the Services to PNCplayer, PNCplayer shall own all rights in and to such feedback and any derivative technologies, methodologies, compilations and/or any other resultant uses based on or developed through or by using such feedback and You shall take all necessary actions that may be requested by PNCplayer to perfect PNCplayer’s rights in and to such feedback.</p><h2 id="fa4e658e-6fbb-4c33-a9b1-1644a1eb1e3b" class=""><strong>8. Notice and Procedure For Making Claims of Copyright or Intellectual Property Infringement</strong></h2><p id="82e36c5e-0a83-4dbd-b5da-d4d65116a0e2" class="">PNCplayer respects the intellectual property of others. PNCplayer does not, however, independently confirm that all Content made available through the Service is provided by a valid rights holder. In the event that PNCplayer becomes aware that Content published on or through the Service has been provided by a person who is not a valid rights holder, PNCplayer may, in appropriate circumstances and at its discretion, disable and/or terminate the publication of such Content. If you believe that your work has been copied or published in a way that constitutes copyright infringement, or your intellectual property rights have been otherwise violated, please provide PNCplayer the following information:</p><ol type="1" id="134b6852-dbb7-456c-8b28-4793d6efbf02" class="numbered-list" start="1"><li>an electronic or physical signature of a person authorized to act on behalf of the owner of the copyright or other intellectual property interest;</li></ol><ol type="1" id="b36b54df-8518-4ab2-b40a-dd93b7ab5ffb" class="numbered-list" start="2"><li>a description of the copyrighted work or other intellectual property that you claim has been infringed;</li></ol><ol type="1" id="70cf3010-bb83-4ab9-ad38-1e8851d92163" class="numbered-list" start="3"><li>a description of where the material that you claim is infringing is located or found on the Website or Service;</li></ol><ol type="1" id="77b50aee-7e5c-4714-999f-aa8d34b2b78b" class="numbered-list" start="4"><li>your address, telephone number and, if available, an email address;</li></ol><ol type="1" id="1d9cd81d-ca9e-4a83-b465-bfa63b81ea60" class="numbered-list" start="5"><li>a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and</li></ol><ol type="1" id="8fea1a81-de86-4163-8164-51563c1f8a17" class="numbered-list" start="6"><li>a statement by you that the above information provided by you in your notice is accurate and, under penalty of perjury, that you are the copyright or intellectual property owner or authorized to act on behalf of the copyright or intellectual property owner.</li></ol><p id="1dcd6642-33e8-444e-bc09-7f8890d6c861" class="">Claims of copyright or other intellectual property infringement should be sent to PNCplayer by mail or email as follows:</p><p id="1bacccfc-020b-4c19-99e3-eb4679935ba2" class="">By Mail:</p><pre id="a88e3762-a1b7-4176-9fe9-bd25253fc0ce" class="code code-wrap"><code>PNCplayer LLC
+502, 5th Floor
+Times Square Building,
+Sector 83 - Gurgaon, HR (IN) - 122102</code></pre><p id="2a467e9f-8cf7-46e1-8a89-15f978dcaa71" class=""><strong>Copy</strong></p><p id="2884596f-d6d7-4e10-ad8c-e6404152cb31" class="">By Email: vikrantyadav190@gmail.com</p><p id="cc3acce2-9e3c-4662-b477-518925343f40" class="">For a full understanding of any rights and or remedies you may have in the case of any infringement, please consult with an attorney.</p><h2 id="4d2b84c2-bc37-471b-8d5b-20aa4f26298b" class=""><strong>10. Warranty Disclaimer</strong></h2><p id="5fda1c3c-72ac-4be1-9f3a-6acb6b63398e" class="">YOU AGREE THAT YOUR USE OF THE PNCPLAYER WEBSITE, SERVICE, AND/OR NETWORK SHALL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, PNCPLAYER, ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE WEBSITE AND/OR SERVICE AND YOUR USE THEREOF. PNCPLAYER MAKES NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE WEBSITE’S CONTENT OR THE CONTENT OF ANY SITES LINKED TO THE WEBSITE AND ASSUMES NO LIABILITY OR RESPONSIBILITY FOR ANY (I) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT, (II) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE WEBSITE, (III) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (IV) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM OUR WEBSITE OR SERVICE, (IV) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH OUR WEBSITE OR SERVICE BY ANY THIRD PARTY, AND/OR (V) ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE WEBSITE OR SERVICE. PNCPLAYER DOES NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE WEBSITE OR ANY HYPERLINKED WEBSITE OR FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND PNCPLAYER WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.</p><h2 id="2ba6093c-fcc1-4b0f-a0dc-4ad5abb0b0f6" class=""><strong>11. Limitation of Liability</strong></h2><p id="b5c06a4a-4349-47bb-980d-907d99909d7e" class="">IN NO EVENT SHALL PNCPLAYER, ITS OFFICERS, OWNERS, DIRECTORS, EMPLOYEES, OR AGENTS, BE LIABLE TO YOU FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES WHATSOEVER RESULTING FROM ANY (I) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT, (II) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF OUR WEBSITE, SERVICE, AND/OR THE PNCPLAYER NETWORK, (III) ANY UNAUTHORIZED ACCESS TO OR USE OF PNCPLAYER’S SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (IV) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE WEBSITE, (IV) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE, WHICH MAY BE TRANSMITTED TO OR THROUGH THE WEBSITE BY ANY THIRD PARTY, AND/OR (V) ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF YOUR USE OF ANY CONTENT POSTED, EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE WEBSITE OR SERVICE, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT THE COMPANY IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE FOREGOING LIMITATION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW IN THE APPLICABLE JURISDICTION.</p><p id="0c775557-5afc-4a53-a427-6051a50c3861" class="">YOU SPECIFICALLY ACKNOWLEDGE THAT PNCPLAYER WILL NOT BE LIABLE FOR USER SUBMITTED MEDIA OR THE DEFAMATORY, INFRINGING, OFFENSIVE, OR OTHERWISE ILLEGAL CONDUCT OF ANY THIRD PARTY AND THAT THE RISK OF HARM OR DAMAGE FROM THE FOREGOING RESTS ENTIRELY WITH YOU.</p><h2 id="00081e3f-1047-48ab-b5e0-e78b581d0095" class=""><strong>12. Indemnity</strong></h2><p id="5a7956a9-4d40-4c69-b578-57793d449fae" class="">You shall defend, indemnify and hold harmless PNCplayer and its Agents and Suppliers and their respective officers, employees, licensors, agents, and affiliates, and all successors in interest to the foregoing, from and against any and all third party claims, damages, costs and expenses (including but not limited to attorney’s’ fees) arising from: (i) your use of and access to the Website and/or Service; (ii) your violation of any term of these Terms of Use; (iii) your violation of any third party right, including without limitation any copyright, property, or privacy right; or (iv) any claim that your User Submitted Media caused damage to a third party. This defense and indemnification obligation shall survive the termination and/or expiration of these Terms of Use.</p><h2 id="ddb48c35-bdaf-45f0-b4e2-620b35850a2d" class=""><strong>13. Assignment</strong></h2><p id="ddf97c31-a6e8-440f-9912-89489a29b8a3" class="">The Terms of Use, and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by PNCplayer without restriction.</p><h2 id="cb7fdf57-27f0-47d4-92a8-24b4f3b8fedd" class=""><strong>14. Publicity and Marketing</strong></h2><p id="bff22310-4907-40fb-85da-995190256982" class="">PNCplayer shall be permitted to line-list You as a customer and use Your standard logo for PNCplayer’s promotional and marketing use during the Term.</p><h2 id="88260df4-95e7-43ec-86e3-2c3072993f13" class=""><strong>15. Governing Law; Dispute Resolution.</strong></h2><p id="2bd9aabc-a92d-4929-a70a-73b684e0a215" class="">You agree that: (i) the Website and Service shall be deemed solely based in India; and (ii) the Website shall be deemed a passive website that does not give rise to personal jurisdiction over PNCplayer, either specific or general, in jurisdictions other than in India. These Terms of Use shall be governed by laws of India, without respect to its conflict of laws principles. Any claim or dispute between you and PNCplayer that arises in whole or in part from the Website and/or Service shall be decided exclusively by arbitration in India.</p><h2 id="200fc55b-d7ce-4cd6-a57e-4b43c86ccb5a" class=""><strong>16. Entire Agreement</strong></h2><p id="d480041f-cef4-4d82-848b-0132b5316289" class="">The Contract(s), including these Terms of Services and all URLs incorporated herein (i.e., the Privacy Policy located at <a href="https://t.ly/AVQa">https://t.ly/AVQa</a>), constitute the complete and exclusive agreements between You and PNCplayer with respect to its subject matter and supersedes any and all prior written or oral agreement or understanding relating to the same subject matter. In the event of any conflict between or among any Contract executed by both You and PNCplayer and these Terms of Service, the Contract shall control to the extent of such conflict and all other terms and conditions of each shall continue to remain in full force and effect. If any provision of a Contract, including without limitation these Terms of Service is held unenforceable for any reason, such provision shall be reformed only to the extent necessary to make it enforceable and such decision shall not affect the enforceability of such provision under other circumstances, or of the remaining provisions hereof under all circumstances. Notwithstanding anything to the contrary in these Terms of Service, if You procure the Services through one of PNCplayer’s Agents instead of directly from PNCplayer, then PNCplayer has no direct or indirect liability to You in connection with the Services or otherwise regardless of whether PNCplayer hosts the Services. You and PNCplayer are independent contractors and no joint venture, partnership, employment, agency or exclusive relationship exists between You and PNCplayer as a result of the Contract(s) and/or Your use of the Services as authorized thereunder. Any written notice required hereunder may be transmitted via email to the primary email contacts provided or other official email contacts available to a party if such email contacts are no longer relevant due to employee departure or otherwise. A Contract may only be modified by written amendment signed by authorized representatives of both You and PNCplayer. All waivers must be made in writing and the failure of You or PNCplayer to enforce any right or provision in a Contract or in these Terms of Service shall not constitute a waiver of such right or provision. Any waiver on one occasion shall not imply or constitute a waiver on any other occasion. PNCplayer shall not be responsible for any failure to perform, or delay in performing any of its obligations under a Contract or these Terms of Service to the extent that such a failure or delay results from force majeure causes beyond its control, such as acts of God or of the public enemy, acts of the government in its sovereign or contractual capacity, fires, floods, epidemics, quarantine restrictions, freight embargoes, strikes, civil commotion, or the like. You may not transfer or assign these Terms of Service or any rights or obligations hereunder, directly or indirectly, by operation of law or otherwise, without the prior written consent of PNCplayer and any such assignment shall be null and void from the beginning. The Contract(s), including without limitation these Terms of Service, shall inure to the benefit of and be binding upon PNCplayer’s or Your respective permitted successors and assigns.</p></div></article></body></html>
